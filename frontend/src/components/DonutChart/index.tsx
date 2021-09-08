@@ -3,7 +3,7 @@ const DonutChart = () => {
    
     const mockData = {
         series: [477, 499, 444, 220, 473],
-        labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
+        labels: ['Maxuel', 'Romulo', 'Rodrigo', 'Ricardo', 'Luciano']
     }
     
     const options = {
