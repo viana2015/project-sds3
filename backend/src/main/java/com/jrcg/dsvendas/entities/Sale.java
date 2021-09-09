@@ -28,13 +28,13 @@ public class Sale {
 	
 	@ManyToOne
 	@JoinColumn(name = "seller_id")
-	private Saller seller;
+	private Seller seller;
 
 	public Sale() {
 		
 	}
 
-	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Saller seller) {
+	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
 		super();
 		this.id = id;
 		this.visited = visited;
@@ -84,11 +84,11 @@ public class Sale {
 		this.date = date;
 	}
 
-	public Saller getSeller() {
+	public Seller getSeller() {
 		return seller;
 	}
 
-	public void setSeller(Saller seller) {
+	public void setSeller(Seller seller) {
 		this.seller = seller;
 	}
 

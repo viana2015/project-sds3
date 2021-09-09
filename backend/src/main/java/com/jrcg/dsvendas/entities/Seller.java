@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_sellers")
-public class Saller {
+public class Seller {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,11 +25,11 @@ public class Saller {
 	private List<Sale> sales = new ArrayList<>();
 
 	
-	public Saller() {
+	public Seller() {
 		
 	}
 
-	public Saller(Long id, String name) {
+	public Seller(Long id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -79,7 +79,7 @@ public class Saller {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Saller other = (Saller) obj;
+		Seller other = (Seller) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
